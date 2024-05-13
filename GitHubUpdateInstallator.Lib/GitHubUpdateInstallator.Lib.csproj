@@ -6,8 +6,8 @@
 		<Nullable>enable</Nullable>
 		<PackageId>JujaKen.GitHubUpdateInstallator.Lib</PackageId>
 		<Version>1.0.0</Version>
-		<Author>JujaKen</Author>
 		<Product>GitHubUpdateInstallator.Lib</Product>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	</PropertyGroup>
 
 </Project>
