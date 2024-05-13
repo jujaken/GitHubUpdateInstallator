@@ -11,6 +11,7 @@ namespace GitHubUpdateInstallator.Lib.Services
             await File.WriteAllTextAsync(path, JsonSerializer.Serialize(cfg));
             return cfg;
         }
+
         public async Task<InstallatorConfig> GetConfig(string path)
         {
             if (!File.Exists(path))

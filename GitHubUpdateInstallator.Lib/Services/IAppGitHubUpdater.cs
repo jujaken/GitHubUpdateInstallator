@@ -24,7 +24,7 @@ namespace GitHubUpdateInstallator.Lib.Services
         /// <param name="repoUrl"></param>
         /// <param name="currentVersion"></param>
         /// <returns>есть ли новый апдейт</returns>
-        Task<bool> CheckNewUpdate(InstallatorConfig cfg, string currentVersion);
+        Task<Update?> CheckNewUpdate(InstallatorConfig cfg, string currentVersion);
 
         /// <summary>
         /// 
