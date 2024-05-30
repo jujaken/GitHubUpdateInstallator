@@ -2,6 +2,7 @@
 
 IClientFacade clientFacade = new ClientFacade();
 
+Console.WriteLine("Yey!");
 Console.WriteLine($"Hello, I'm {(await clientFacade.GetCurrentUpdate()).Version}");
 
 if (await clientFacade.CheckUpdate() != null)
