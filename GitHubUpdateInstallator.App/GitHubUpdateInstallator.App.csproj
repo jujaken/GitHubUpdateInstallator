@@ -11,4 +11,10 @@
     <ProjectReference Include="..\GitHubUpdateInstallator.Lib\GitHubUpdateInstallator.Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="AppUpdate.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
