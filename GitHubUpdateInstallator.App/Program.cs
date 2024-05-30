@@ -12,7 +12,7 @@ try
     var cfg = await worker.GetConfig("InstallatorConfig.json");
 
     IAppInfoSevice appInfoService = new AppInfoJsonSevice();
-    var update = await appInfoService.GetCurrentUpdate(dir + "/" + "AppUpdate");
+    var update = await appInfoService.GetCurrentUpdate(dir + "/" + "AppUpdate.json");
 
     IAppGitHubUpdater appGitHubUpdater = new AppGitHubUpdater();
     await appGitHubUpdater.Download(cfg, update.Version, dir);
