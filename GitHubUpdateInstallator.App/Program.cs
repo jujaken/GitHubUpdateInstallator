@@ -20,11 +20,15 @@ try
     Process.Start(args[0]);
     Environment.Exit(0);
 
+    return 0;
+
 #if !DEBUG
 
 }
 catch
 {
     Console.WriteLine("bad config, bruh");
+    return -1;
 }
+
 #endif
