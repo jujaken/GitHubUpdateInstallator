@@ -17,6 +17,7 @@ namespace GitHubUpdateInstallator.Lib.Services
         {
             var lastUpdate = await GetLastUpdate(cfg);
             if (lastUpdate == null) return null;
+            Console.WriteLine(lastUpdate.Version);
 
             var lastSplit = lastUpdate.Version.Split('.');
             var currentSplit = currentVersion.Split('.');

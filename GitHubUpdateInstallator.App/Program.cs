@@ -17,6 +17,8 @@ try
     IAppGitHubUpdater appGitHubUpdater = new AppGitHubUpdater();
     await appGitHubUpdater.Download(cfg, update.Version, dir);
 
+    Console.WriteLine();
+
     Process.Start(args[0]);
     Environment.Exit(0);
 

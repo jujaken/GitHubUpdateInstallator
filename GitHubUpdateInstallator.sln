@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubUpdateInstallator.App
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubUpdateInstallator.Lib", "GitHubUpdateInstallator.Lib\GitHubUpdateInstallator.Lib.csproj", "{D5E394AC-3362-41F8-BEE5-8584C1264B60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubUpdateInstallator.App.Example", "GitHubUpdateInstallator.App.Example\GitHubUpdateInstallator.App.Example.csproj", "{E81B6AFF-5ED8-4523-B12F-4BABE9F3C770}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D5E394AC-3362-41F8-BEE5-8584C1264B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5E394AC-3362-41F8-BEE5-8584C1264B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5E394AC-3362-41F8-BEE5-8584C1264B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81B6AFF-5ED8-4523-B12F-4BABE9F3C770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81B6AFF-5ED8-4523-B12F-4BABE9F3C770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81B6AFF-5ED8-4523-B12F-4BABE9F3C770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81B6AFF-5ED8-4523-B12F-4BABE9F3C770}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
