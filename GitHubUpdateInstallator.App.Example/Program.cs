@@ -1,8 +1,8 @@
 ﻿using GitHubUpdateInstallator.Lib.Services;
 
-Console.WriteLine("Hello, I'm v1.0.0");
-
 IClientFacade clientFacade = new ClientFacade();
+
+Console.WriteLine($"Hello, I'm {(await clientFacade.GetCurrentUpdate()).Version}");
 
 if (await clientFacade.CheckUpdate() != null)
 {
