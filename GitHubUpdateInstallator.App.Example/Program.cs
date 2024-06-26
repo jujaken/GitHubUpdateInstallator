@@ -1,21 +1,25 @@
-﻿using GitHubUpdateInstallator.Lib.Services;
+﻿using GitHubUpdateInstallator.Lib.Models;
+using GitHubUpdateInstallator.Lib.Services;
 
 IClientFacade clientFacade = new ClientFacade();
 
 Console.WriteLine("Yey!");
 Console.WriteLine($"Hello, I'm {(await clientFacade.GetCurrentUpdate()).Version}");
 
+Update? update = null;
 try
 {
-    if (await clientFacade.CheckUpdate() != null)
-    {
-        Console.WriteLine("New update!");
-        clientFacade.Update();
-    }
-    else
-        Console.WriteLine("No update");
+    update = await clientFacade.CheckUpdate();
 }
 catch (HttpRequestException)
 {
     Console.WriteLine("[error] No connection!");
 }
+
+if (update == null)
+{
+    Console.WriteLine("New update!");
+    clientFacade.Update();
+}
+else
+    Console.WriteLine("No update");
